@@ -1,0 +1,9 @@
+/**IE8***/
+
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  margin-top:-30px
+}
+
+.cbp-ig-grid li:hover .cbp-ig-category, .touch .cbp-ig-grid li .cbp-ig-category {
+    margin-top:20px;
+}

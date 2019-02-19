@@ -1,0 +1,57 @@
+html{font-size:14px;}
+.tl-box{position: relative;width: 1170px;min-height: 83vh;color: #666D89;margin: 95px auto 0;}
+.tl-box .line{position: absolute;top: 1%;left: 21rem;bottom: 0;display: block;width: 3px;height: 95%;background: #dadada;}
+.tl-box .year{position: relative;z-index: 999;width:100%;height: 8rem;overflow:hidden;}
+.tl-box .year .year-line{position: absolute;top: -10px;left: 0;right: 0;bottom: 0;margin: auto;display: block;width: 100%;height: 1px;border-top:1px dashed #dadada;}
+.tl-box .year ul{position: absolute;left: 21rem;width:100%;padding: 0;margin: 0;margin-bottom: 1rem;font-size: 1rem;transition:.4s;}
+.tl-box .year li{float:left;position:relative;margin-right: 5.1rem;margin-left: -3.2rem;width: 6.5rem;height: 6.5rem;line-height: 2.4rem;text-align: center;border-radius: 5rem;cursor:pointer;transition:.4s;}
+.tl-box .year li span{display: block;width: 20px;height: 20px;overflow: hidden;border-radius: 2rem;background: #fff;border: 1px dashed #dadada;margin-left: 2.5rem;margin-top: 2.8rem;transition:.4s;}
+.tl-box .year li span i{display: block;width: 18px;height: 18px;border-radius: 100%;background: #dadada;border: 6px solid #fff;transition:.4s;}
+.tl-box .year li.active{line-height: 6.5rem;text-align: center;font-size: 2rem;background: #fff;border: 2px solid #ddd;transition:.4s;}
+.tl-box .year li.active span{width:0;height:0;border:0;margin: 0;background:transparent;transition:.4s;
+    border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 10px solid #dadada;border-radius: 0;position: absolute;bottom: -10px;left: 2.7rem;}
+.tl-box .year li.active span i{width: 0;height: 0;border:0;background:transparent;transition:.4s;}
+.tl-box .year li.active:hover{color:#666D89;transition:.4s;}
+.tl-box .year li.active:hover span{border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 10px solid #dadada;border-bottom: 0;border-radius: 0;position: absolute;bottom: -10px;left: 2.7rem;transition:.4s;}
+.tl-box .year li:hover{color:#d43f3a;}
+.tl-box .year li:hover span{border: 1px dashed #d43f3a;}
+.tl-box .year li:hover span i{background: #d43f3a;}
+.item-box{width:100%;height:4rem;overflow:hidden;cursor:pointer;transition:.3s;}
+.item-content{position:absolute;left:21rem;width:72%;}
+.icon-circle{float: left;display: block;width: 22px;height: 22px;overflow:hidden;margin-left: -10px;margin-top: 10px;margin-right: 10px;border-radius: 2rem;background: #fff;border: 1px dashed #d43f3a;transition:.3s;}
+.icon-circle i{float: left;display:block;width:20px;height:20px;border-radius:100%;background:#d43f3a;border:3px solid #fff;}
+.icon-circle span{float: left;margin-left: 5px;color: #d43f3a;}
+.item-main{margin-left:2rem;}
+.item-main .title{margin: 0.5rem 0 0 0;line-height: 2.4rem;font-size: 1.2rem;}
+.item-main .title span{font-size: 1.4rem;margin-right:1rem;color:#666D89}
+.item-main .imgs-box{float: left;position: relative;margin-top: 2rem;margin-left: 2rem;width: 70%;height: 30rem;}
+.item-main .imgs-box .img{position: absolute;height: 23rem;width: 40rem;box-shadow: 0 0 1rem 0 #333;}
+.item-main .imgs-box .img:nth-child(2){left:3rem;top:3rem;}
+.item-main .imgs-box .img img{width:100%;height:100%;}
+.item-main .detail-box{overflow: hidden;height: 0;transition:.3s;}
+
+.item-box.active{height:35rem;cursor: default;transition:.3s;}
+.item-box.active .icon-circle{width:100px;transition:.3s;}
+.item-box.active .detail-box{height: 32rem;transition:.3s;}
+
+.year-item{display:none;}
+
+@media (max-width: 800px) {
+    html{font-size:62.5%;}
+    .tl-box{min-height:77vh;width: auto;}
+    .tl-box .year{height: 7rem;}
+    .tl-box .year .year-line{top: -20px;}
+    .tl-box .year ul{left:7.7rem;}
+    .tl-box .year li{margin-right:3rem;margin-left: -2.2rem;width: 5rem;height: 5rem;}
+    .tl-box .year li span{margin-left: 1.5rem;margin-top: 1.8rem;}
+    .tl-box .line{left:8rem;}
+    .item-content{left:8rem;}
+    .item-box .detail-box{display:none;}
+
+    .tl-box .year li.active{line-height: 5rem;font-size: 1.8rem;}
+    .tl-box .year li.active span{left: 1.9rem;}
+    .tl-box .year li.active:hover span{left: 1.9rem;}
+    .item-box.active{height:4rem;background: #fff;border: 0;cursor: pointer;}
+    .item-box.active .icon-circle{width:22px;}
+    .item-main .title{line-height:2.8rem;}
+}

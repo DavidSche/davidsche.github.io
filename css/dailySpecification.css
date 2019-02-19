@@ -1,0 +1,9 @@
+.markdown-body table tr th,.markdown-body table tr td{
+    text-align: center!important;
+}
+.markdown-body table th:nth-child(1){
+    width: 40%;
+}
+.markdown-body table th:nth-child(2),.markdown-body table th:nth-child(3),.markdown-body table th:nth-child(4){
+    width: 20%;
+}

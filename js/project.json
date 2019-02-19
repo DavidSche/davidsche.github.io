@@ -1,0 +1,35 @@
+[
+  {
+    "name":"⻔户APP",
+    "url":"https://davidsche.github.io",
+    "img":"./img/Project/publicTeam/img01.jpg",
+    "technology":"vue,webpack,sass,echarts",
+    "time":"2018年2月",
+    "type":"H5",
+    "txt":"移动端app提供实时的新闻资讯和天⽓气信息，还能在线和农业专家交流咨询科学的农业技术。"
+  },{
+    "name":"政务数据开放平台",
+    "url":"https://davidsche.github.io",
+    "img":"./img/Project/publicTeam/img01.jpg",
+    "technology":"css3,echarts",
+    "time":"2017年11月",
+    "type":"PC",
+    "txt":"政务数据开放平台"
+  },{
+  "name":"行业大数据",
+  "url":"https://davidsche.github.io",
+  "img":"./img/Project/publicTeam/img01.jpg",
+  "technology":"jquery,echarts",
+  "time":"2017年4月",
+  "type":"可视化",
+  "txt":"对行业大数据进行专题分析，旨在从全局的角度，对苹果大数据的应用方向、数据源、实施路径、应用效果、应用场景设计、可行性等方面提出实施方案，深入挖掘苹果大数据的价值。"
+},{
+  "name":"融合平台",
+  "url":"https://davidsche.github.io",
+  "img":"./img/Project/publicTeam/img02.jpg",
+  "technology":"jquery,css3,echarts,SVG,bootstrap",
+  "time":"2017年5月",
+  "type":"可视化",
+  "txt":"数据采集、共享交互、数据清洗、建模分析一体的大数据共享融合平台；对汇聚到平台的数据进行编目，将数据目录化（可以把资源目录理解为一本书的目录，数据就是书中的内容），便于对外提供数据服务"
+}
+]
