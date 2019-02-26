@@ -9,11 +9,11 @@ $(document).ready(function () {
     });
     //获取url中的参数日期，初始化日期是写死的
     urlParam = getHrefDate() ;
-    //初始化加载周刊列表
+    //初始化加载博客列表
     getListData(urlParam);
-    //初始化加载最新一期周刊内容，
+    //初始化加载最新一期博客内容，
     //getContentData(urlParam);
-    //编辑周刊内容的icon链接
+    //编辑博客内容的icon链接
     $("#news-edit-link").attr("href","https://github.com/DavidSche/davidsche.github.io/edit/master/blogs/"+urlParam+".md");
 
     //MORE按钮点击显示更多-弹窗
