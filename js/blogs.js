@@ -44,7 +44,7 @@ function getHrefDate(){
  */
 function getListData(){
     $.ajax({
-        url: "blogs/blogList.md",
+        url: "blogs/blog.md",
         success: function (data) {
             $(".markdown-content-body").addClass("active");
             $(".markdown-list-body,.markdown-list-more-show").html(marked(data));
