@@ -1,10 +1,7 @@
+# **DevOps**
 
- 
-
-## **DevOps**
- 
 强调的是高效组织团队之间如何通过自动化的工具协作和沟通来完成软件的生命周期管理，从而更快、更频繁地交付更稳定的软件。
 
-<img src="https://pic3.zhimg.com/v2-702b05c2dad9d5626bf4f747dfa51406_b.jpg" data-rawwidth="500" data-rawheight="514" class="origin_image zh-lightbox-thumb" width="500" data-original="https://pic3.zhimg.com/v2-702b05c2dad9d5626bf4f747dfa51406_r.jpg">
+[DevOps Flow](https://davidsche.github.io/img/devops_flow.png)
 
 DevOps 只是Dev（开发人员）+Ops（运维人员），实际上是一组过程、方法与系统的统称，其概念从2009 年首次提出发展到现在，内容非常丰富，有理论也有实践，包括组织文化、自动化、精益、反馈和分享等不同方面。组织架构、企业文化与理念等，需要自上而下设计，用于促进开发部门、运维部门和质量保障部门之间的沟通、协作与整合，简单而言组织形式类似于系统分层设计。自动化是指所有的操作都不需要人工参与，全部依赖系统自动完成，比如上述的持续交付过程必须自动化才有可能完成快速迭代。DevOps 的出现是由于软件行业日益清晰地认识到，为了按时交付软件产品和服务，开发部门和运维部门必须紧密合作。
