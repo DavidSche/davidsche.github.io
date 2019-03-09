@@ -78,6 +78,7 @@ h1 small { font-size: 90% }
 .banner-txt h3{
   font-size: 24px;
   font-width:bold;
+  text-align:center;
 }
 .banner-txt p{
  font-size: 14px;
