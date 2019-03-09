@@ -5,16 +5,16 @@
       "year":"2019",
       "items":[
         {
-          "date":"1月3日",
-          "title":"DevOps",
-          "url":"https://zhu18.github.io/visualcontrols/",
-          "intro":"简介",
+          "date":"3月1日",
+          "title":"DevOps 2.0",
+          "url":"https://zhu18.github.io/",
+          "intro":"基于Swarm的DevOps",
           "image":"imgs/2019-01.jpg"
         },
         {
           "date":"1月12日",
-          "title":"DevOps 2.0",
-          "url":"https://davidsche.github.io/guide/docs/project/all.html",
+          "title":"2019 新的开始！",
+          "url":"https://davidsche.github.io/",
           "intro":"简介",
           "image":"imgs/2019-01.jpg"
         }
@@ -28,14 +28,14 @@
           "title":"DevOps研发v1.0",
           "url":"https://davidsche.github.io",
           "intro":"简介",
-          "image":"imgs/2019-01.jpg"
+          "image":"imgs/2018.jpg"
         },
         {
           "date":"3月25日",
-          "title":"代码规范",
-          "url":"https://davidsche.github.io/guide/docs/index.html",
+          "title":"网站测试",
+          "url":"https://davidsche.github.io/index.html",
           "intro":"简介",
-          "image":"imgs/2019-01.jpg"
+          "image":"imgs/2018.jpg"
         }
       ]
     }
