@@ -97,7 +97,7 @@ function bannerBG(){
     particlesJS("rank-banner", {
         particles: {
             number: {
-                value: 40,
+                value: 60,
                 density: {
                     enable: !0,
                     value_area: 800
