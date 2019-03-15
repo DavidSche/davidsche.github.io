@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: management-ui 
+  namespace: management-ui 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-ui
+  template:
+    metadata:
+      labels:
+        role: management-ui 
+        app: web-ui
+    spec:
+      containers:
+      - name: management-ui 
+        image: dockersamples/star-collect:v2
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9001

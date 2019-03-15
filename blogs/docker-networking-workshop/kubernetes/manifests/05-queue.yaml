@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: queue 
+  namespace: infrastructure
+spec:
+  ports:
+  - port: 5000
+    targetPort: 5000 
+  selector:
+    app: queue 
+---
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: queue 
+  namespace: infrastructure
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: queue
+  template:
+    metadata:
+      labels:
+        app: queue 
+    spec:
+      containers:
+      - name: queue 
+        image: dockersamples/star-probe
+        imagePullPolicy: Always
+        command:
+        - probe
+        - --http-port=5000
+        - --urls=http://facade.backend:80/status,http://payments.pci:6380/status,http://backend.backend:6379/status,http://client.frontend:9000/status,http://queue.infrastructure:5000/status
+        ports:
+        - containerPort: 5000

@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client
+  namespace: frontend
+spec:
+  ports:
+  - port: 9000 
+    targetPort: 9000
+  selector:
+    app: client 
+---
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: client 
+  namespace: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client 
+    spec:
+      containers:
+      - name: client 
+        image: dockersamples/star-probe
+        imagePullPolicy: Always
+        command:
+        - probe
+        - --urls=http://facade.backend:80/status,http://payments.pci:6380/status,http://backend.backend:6379/status,http://client.frontend:9000/status,http://queue.infrastructure:5000/status
+        ports:
+        - containerPort: 9000 
