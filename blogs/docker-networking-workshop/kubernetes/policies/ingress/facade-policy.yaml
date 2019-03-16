@@ -1,0 +1,19 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  namespace: backend
+  name: facade-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: facade
+  policyTypes:
+  - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              requires: backend
+      ports:
+        - protocol: TCP
+          port: 80

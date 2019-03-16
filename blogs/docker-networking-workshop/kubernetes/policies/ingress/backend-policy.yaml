@@ -1,0 +1,19 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  namespace: backend
+  name: backend-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: backend
+  policyTypes:
+  - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: facade
+      ports:
+        - protocol: TCP
+          port: 6379
