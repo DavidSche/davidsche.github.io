@@ -1,0 +1,30 @@
+ocker-Swarm调度策略
+2016年06月01日 00:39:51 gezhonglei2007 阅读数 3926
+swarm在用命令swarm manager启动swarm manager时，可用--strategy指定调度策略。 
+swarm提供了三种调度策略计算节点的排名，在调度（例如选择哪一个节点运行容器时）时，取排名最前的节点。
+
+这三种调度策略是： 
+- spread 
+- binpack 
+- random
+
+random策略：随机选择节点。一般用于开发测试阶段。
+
+spread策略：默认策略，swarm优先选择占用资源（如CPU、内存等）最少的节点，能保证集群中所有节点资源的均匀使用。 
+它的好处是，保证
+
+binpack策略：与spread相反，它的目的是尽可能地填满一个节点，以保证更多空余的节点。
+
+示例：
+
+# 测试spread策略
+# 背景：swarm集群中有两个相同资源（cpu、内存大小相同）的节点node1 node2
+# 运行两个容器
+docker tcp://<manager_ip:manager_port> run -d -P -m 1G --name db mysql
+docker tcp://<manager_ip:manager_port> run -d -P -m 1G --name db mysql
+# 查看容器所在节点
+docker tcp://<manager_ip:manager_port> ps
+# 结果分析：如果是spread策略，两个运行的容器一定在不同的节点串
+#       如果是binpack策略，两个运行的容器一定在同一个节点中
+
+参考：https://docs.docker.com/swarm/scheduler/strategy/
