@@ -1,0 +1,17 @@
+{
+    "insecure-registries": [
+        "192.168.5.101:5000",
+        "124.133.33.114:3101"
+    ],
+    "registry-mirrors": [
+        "https://um1k3l1w.mirror.aliyuncs.com"
+    ],
+    "storage-driver": "overlay2",
+    "storage-opts": [
+        "overlay2.override_kernel_check=true"
+    ],
+    "log-driver": "fluentd",
+    "log-opts": {
+        "fluentd-address": "192.168.5.113:24224"
+    }
+}
