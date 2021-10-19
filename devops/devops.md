@@ -1,11 +1,11 @@
 #### *DevOps:An Ultimate Kubernetes Hands-on Labs*
 
-[第三期 * 2019-02-19 *](#2019-02-19)
+[第三期 * 2019-02-19 *](2019-02-19)
 
 ## 准备工作:
 
 - [Introductory Slides](#/k8slab/Kubernetes_Intro_slides-1/Kubernetes_Intro_slides-1.html)
-- [Deep Dive into Kubernetes Architecture](#/k8slab/Kubernetes_Architecture.md)
+- [Deep Dive into Kubernetes Architecture](#/k8slab/Kubernetes_Architecture)
 
 
 ## 准备一个 5-节点 Kubernetes Cluster
