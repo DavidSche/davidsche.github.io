@@ -2,14 +2,10 @@
 
 [第三期 * 2019-02-19 *](#2019-02-19)
 
-[第二期 * 2019-02-11 *](#2019-02-11)
+## 准备工作:
 
-[第一期 * 2019-02-10 *](#2019-02-10)
-
-## Pre-requisite:
-
-- [Introductory Slides](./Kubernetes_Intro_slides-1/Kubernetes_Intro_slides-1.html)
-- [Deep Dive into Kubernetes Architecture](./Kubernetes_Architecture.md)
+- [Introductory Slides](/Kubernetes_Intro_slides-1/Kubernetes_Intro_slides-1.html)
+- [Deep Dive into Kubernetes Architecture](/Kubernetes_Architecture.md)
 
 
 ## 准备一个 5-节点 Kubernetes Cluster
@@ -20,24 +16,12 @@
 - [Setting up WeaveScope For Visualization on PWK](./weave-pwk.md)
 - [Running Portainer on 5 Node Kubernetes Cluster](https://github.com/collabnix/kubelabs/tree/master/portainer#running-portainer-on-5-node-kubernetes-cluster)
 
-
-
-### GKE
-
-- [Setting up GKE Cluster](./gke-setup.md)
-- [Setting up Weavescope for Visualization on GKE](./weave.md)
-
-### Docker Desktop for Mac
-
-- [Setting up Kubernetes Cluster on AWS using Kops running on Docker Desktop for Mac](./dockerdesktopformac/README.md)
-
-
 ### Ubuntu
 
 - [Setting up Kubernetes on Ubuntu](https://github.com/collabnix/kubelabs/blob/master/install/ubuntu/README.md)
 
 
-## Using Kubectl
+## 使用 Kubectl
 
 - [Kubectl for Docker Beginners](./kubectl-for-docker.md)
 - [Accessing Kubernetes API](./api.md)
@@ -139,7 +123,7 @@
 - [Creating a Kubernetes User Account Using X509 Client Certificate](./RBAC101/#creating-a-kubernetes-user-account-using-x509-client-certificate)
 
 
-## Service Catalog101
+## 服务目录（Service Catalog101）
 
 
 - [What is Kubernetes Service Catalog?](./ServiceCatalog101/what-is-service-catalog.md)
@@ -157,7 +141,7 @@
 - Cleaning up
 
 
-## Cluster Networking101
+## 集群网络（Cluster Networking101）
 
 -  Introductory Slides (Pending)
 - [What Is Cluster Networking In Kubernetes Sense?](./ClusterNetworking101/README.md/#Cluster-Networking)
@@ -174,9 +158,9 @@
     - [Flannel](./ClusterNetworking101/README.md/#Flannel)
 - [LAB- Weave Net Implementation](./ClusterNetworking101/README.md/#LAB-Weave-Net-Implementation)
 
-## Network Policies101
+## 网络策略（Network Policies101） 
 
-- Introductory Slides (Pending)
+- 介绍PPT (Pending)
 - [What is a Kubernetes Network Policy?](./Network_Policies101/README.md)
 - [Creating Your First NetworkPolicy Definition](./Network_Policies101/First_Network_Policy.md)
 - [How can we fine-tune Network Policy using selectors?](./Network_Policies101/how_can_we_fine-tune_network_policy_using_selectors.md)
@@ -187,7 +171,7 @@
 
 
 
-## Monitoring101
+## 监控 101 Monitoring101
 
 - Introductory Slides (Pending)
 - [Monitoring in Kubernetes](./Monitoring101/README.md/#Monitoring-in-Kubernetes)
@@ -199,7 +183,7 @@
     - [Heapster is Going Away](./Monitoring101/README.md/#Heapster-is-going-away)
     - [Metrics Server Will Get More Cool Features](./Monitoring101/README.md/#Metrics-Server-Will-Get-More-Cool-Features)
 
-# Contributors
+# 贡献者
 
 - [Ajeet Singh Raina](https://twitter.com/ajeetsraina)
 - [Sangam Biradar](https://twitter.com/BiradarSangam)
@@ -214,7 +198,7 @@
 
 
 
-# Further References:
+# 进一步 学习:
 
 - [Kubetools](https://kubetools.collabnix.com)
 
